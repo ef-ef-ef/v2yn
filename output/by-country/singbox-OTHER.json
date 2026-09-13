@@ -4,15 +4,18 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇸🇩 SD 01 - xiaohe",
-      "server": "z-jp1.1card.cc",
-      "server_port": 10012,
-      "password": "ultra@kWZdAzt_IH593eGLRjdxnBZ0",
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "shop.neexbyte.ir",
+      "server_port": 8443,
+      "uuid": "464bc502-f963-45b6-81e3-e33d18427506",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "insecure": true
+        "server_name": "shop.neexbyte.ir",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws"
       }
     },
     {
@@ -20,14 +23,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇩 SD 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇩 SD 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
