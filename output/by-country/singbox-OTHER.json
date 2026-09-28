@@ -4,25 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "172.67.221.230",
+      "server": "8.47.69.0",
       "server_port": 443,
-      "uuid": "ec5cf915-2203-403c-9710-dbd553857929",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "novantunnel.tech",
+        "server_name": "www.pleadcourt.org",
         "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        }
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/Novan-AE27",
+        "path": "/assignment",
         "headers": {
-          "Host": "novantunnel.tech"
+          "Host": "www.pleadcourt.org"
         }
       }
     },

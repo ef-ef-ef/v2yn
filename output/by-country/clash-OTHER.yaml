@@ -5,20 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 172.67.221.230
+  server: 8.47.69.0
   port: 443
   udp: true
-  type: vless
-  uuid: ec5cf915-2203-403c-9710-dbd553857929
-  tls: true
-  servername: novantunnel.tech
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
   skip-cert-verify: false
-  client-fingerprint: randomized
   network: ws
   ws-opts:
-    path: /Novan-AE27
-    headers:
-      Host: novantunnel.tech
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
